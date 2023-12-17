@@ -11,24 +11,13 @@ añoActual = fechaHoy.year
 mesActual = fechaHoy.month
 diaActual = fechaHoy.day
 
-# edad = añoActual - añoNacimiento
-# print(f'Usted tiene {edad} años')
+edadActual = (añoActual-añoNacimiento)
+edadPendiente = (añoActual-añoNacimiento)-1
 
-# if mesNacimiento<mesActual:
-#     print(f'Usted ya cumplió años')
-# elif diaNacimiento>diaActual and mesNacimiento>=mesActual :
-#     edad-=1
-#     print(f'Usted está por cumplir años')
-# elif diaNacimiento==diaActual and mesNacimiento==mesActual :
-#     print(f'Hoy es su cumpleaños, felicidades')
-
-# edadPendiente = (añoActual-añoNacimiento)-1
-# while diaNacimiento>diaActual and mesNacimiento>=mesActual:
-
-#     if mesNacimiento<mesActual:
-#         edadActual = (añoActual-añoNacimiento)
-#         print(f'Usted ya cumplió años y tiene {edadActual} años')
-#     elif diaNacimiento>diaActual and mesNacimiento>=mesActual :
-#         print(f'Usted tiene {edadPendiente} y está por cumplir años')
-#     elif diaNacimiento==diaActual and mesNacimiento==mesActual :
-#         print(f'Hoy cumples {edadActual} años, felicidades')
+if  mesActual>mesNacimiento :
+    print(f'Usted ya cumplió años y tiene {edadActual} años')
+elif diaNacimiento>diaActual and mesNacimiento>=mesActual :
+    print(f'Usted tiene {edadPendiente} y está por cumplir años')
+elif diaNacimiento==diaActual and mesNacimiento==mesActual :
+    print(f'Hoy cumples {edadActual} años, felicidades')
+    
