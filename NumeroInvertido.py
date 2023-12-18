@@ -16,7 +16,6 @@ longitud = len(numeroStr)
 numeroInverso = 0
 for i in range(longitud):
     digito = numero % 10
-    print(digito)
     numero //= 10
     numeroInverso = numeroInverso*10+digito
 
