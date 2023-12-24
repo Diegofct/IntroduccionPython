@@ -1,14 +1,15 @@
 import math
 
-numeros_reales = [1.3, 1.3, 1.3]
-n = len(numeros_reales)
-x = sum(numeros_reales)
-promedio = x/n
-xi = [valores for valores in numeros_reales]
-
+numeros_reales = [1.5, 9.5]
 
 def desviacion_estandar(valores):
-    dv = (math.sqrt(x*(xi-promedio/(n-1))))
-    return dv
+    n = len(valores)
+    x = sum(valores)
+    promedio = x/n
+    xi = [valor for valor in valores]
 
-desviacion_estandar()
+    desviacion = math.sqrt(sum((xi - promedio) ** 2 for xi in valores) / (n - 1))
+    return desviacion
+
+resultado = desviacion_estandar(numeros_reales)
+print(resultado)
