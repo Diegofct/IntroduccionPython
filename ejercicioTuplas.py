@@ -28,4 +28,6 @@ for clave, valor in total_ventas.items():
     if valor > 10:
         masVentas = {clave}
         print(f'Los productos que tuvieron más de 10 ventas son: {masVentas}')
+
+print(f'Hola mundo')
         
