@@ -5,9 +5,9 @@ cantidadHoras = int(input("Ingrese un número cualquiera para saber qué hora ma
 
 sumarHoras = horaActual+cantidadHoras
 
-if sumarHoras < 12:
+if sumarHoras < 24:
     print(f'En {cantidadHoras} horas, serán las {sumarHoras}')
 else:
-    hora = (sumarHoras%12)
+    hora = (sumarHoras%24)
     print(f'En {cantidadHoras} horas, serán las {hora}')
     
