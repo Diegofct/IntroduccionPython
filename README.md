@@ -9,3 +9,5 @@
  - Variables, tipo de datos y operadores.
  - Estructuras condicionales o de decisión (if-elif-else).
  - Estructuras repetitivas (for, while, do while).
+ - Listas.
+ - Tuplas.
