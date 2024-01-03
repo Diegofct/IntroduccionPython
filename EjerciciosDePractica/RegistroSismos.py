@@ -1,5 +1,5 @@
 listaCiudades = []
-cantidadCiudades = 2 
+cantidadCiudades = 5 
 
 for i in range(cantidadCiudades):
     ciudad = input("Escriba el nombre de la ciudad que desea registrar: ")
